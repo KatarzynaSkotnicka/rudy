@@ -1,0 +1,253 @@
+@import url(reset.css);
+
+.rudy { color: #f3ba67; }
+.jeans { color: #3a455c; }
+
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: Roboto, sans-serif;
+	font-size: 62.5%;
+	background-color: #f3ba67;
+	background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffe8c6' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+h1, h2, h3 {
+	font-family: neucha, sans-serif;
+}
+
+
+h2 {
+	font-size: 3.5rem;
+	margin-bottom: 2rem;
+	color: #3a455c;
+}
+
+
+.portrait {
+	background: url(assets/portrait.jpg) no-repeat fixed;
+	height: 100vh;
+	background-size: cover;
+}
+
+.portrait:hover {
+	filter: saturate(140%) hue-rotate(7deg);
+	transition: 2s;
+}
+
+.fur {
+	position: absolute;
+	z-index: 9999;
+	height: 100.1vh;
+}
+
+header {
+	height: 10rem;
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+/*	background-color: rgba(58, 69, 92, 0.98);
+*/	background-color: #3a455c;
+background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23656970' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+h1 {
+	font-size: 6rem;
+	color: #f3ba67;
+	float: left;
+	margin-top: 2rem;
+	margin-left: 18%;
+} 
+
+nav {
+	float: right;
+	margin-right: 2rem;
+	margin-top: 4rem;
+}
+
+nav a {
+	text-decoration: none;
+	color: #f3ba67;
+}
+
+nav a:hover {
+	color: #F6D372;
+	transition: 0.6s;
+}
+
+li {
+	display: inline-block;
+	font-size: 2.5rem;
+	font-family: neucha, sans-serif;
+	padding-right: 4rem;
+}
+
+i {
+	margin-top: 5rem;
+	font-size: 2rem;
+	color: #3a455c;
+}
+section {
+	max-width: 800px;
+	text-align: center;
+	font-size: 1.6rem;
+	margin: 0 auto;
+	line-height: 1.7;
+}
+
+article {
+	margin: 2.5rem 0;
+}
+
+p {
+	column-count: 2;
+	text-align: left;
+	color: #3a455c;
+}
+em {
+	font-weight: 600;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+#galeria {
+	margin: 5rem 0;
+}
+
+#galeria div {
+	width: 25%;
+	float: left;
+	position: relative;
+}
+
+#galeria img:hover {
+	filter: saturate(140%) hue-rotate(10deg);
+	transition: 0.4s;
+}
+
+.container {
+	height: 200px;
+	position: relative;
+}
+
+.container1 {
+	background: url('assets/1.jpg') no-repeat;
+	background-size: cover;
+}
+
+.container2 {
+	background: url('assets/2.jpg') no-repeat;
+	background-size: cover;
+}
+
+.container3 {
+	background: url('assets/3.jpg') no-repeat;
+	background-size: cover;
+}
+
+.container4 {
+	background: url('assets/4.jpg') no-repeat;
+	background-size: cover;
+}
+
+.container5 {
+	background: url('assets/5.jpg') no-repeat;
+	background-size: cover;
+}
+
+.container6 {
+	background: url('assets/6.jpg') no-repeat;
+	background-size: cover;
+}
+
+.container7 {
+	background: url('assets/7.jpg') no-repeat;
+	background-size: cover;
+}
+
+.container8 {
+	background: url('assets/8.jpg') no-repeat;
+	background-size: cover;
+}
+
+.napisna {
+	display: none;
+	line-height: 1.5;
+	font-size: 1.5rem;
+	text-align: center;
+	column-count: 1;
+	background-color: rgba(58, 69, 92, 0.8);
+	padding: 2rem;
+	position: absolute;
+	bottom: 0;
+	color: #fff;
+}
+
+.container:hover {
+filter: saturate(140%) hue-rotate(7deg);
+	transition: 2s;
+}
+
+.container:hover .napisna {
+	display: inline-block;
+	width: 100%;
+	
+}
+
+#kontakt p {
+	column-count: 1;
+	text-align: center;
+	font-size: 2rem;
+}
+
+
+
+#kontakt span {
+	font-weight: 600;
+}
+
+
+
+footer{
+	height: 6rem;
+	background-color: #3a455c;
+background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23656970' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+	color: #fff;
+	margin-top: 7rem;
+}
+
+footer p {
+	color: #f3ba67;
+	font-size: 1.2rem;
+	text-align: center;
+	column-count: 1;
+	margin-right: 2rem;
+	padding-top: 2.4rem;
+}
+
+
+.btn-anime {
+	color: #3a455c;
+	background-image: linear-gradient(90deg, #F7C987 50%, transparent 50%);
+	font-size: 3.5rem;
+}
+
+.btn {
+	display: inline-block;
+	background-color: inherit;
+	background-position: 100% 0;
+	background-size: 300%;
+	transition: 0.7s;
+	padding: 0.7rem 1.8rem;
+	border-radius: 10px;
+}
+
+.btn:hover {
+	background-position: 0 100%;
+}
+
