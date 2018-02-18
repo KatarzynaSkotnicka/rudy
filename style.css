@@ -34,7 +34,7 @@ h2 {
 }
 
 .portrait:hover {
-	filter: saturate(140%) hue-rotate(7deg);
+	filter: saturate(130%) hue-rotate(6deg);
 	transition: 2s;
 }
 
@@ -86,7 +86,7 @@ li {
 }
 
 i {
-	margin-top: 5rem;
+	margin-top: 2rem;
 	font-size: 2rem;
 	color: #3a455c;
 }
@@ -107,6 +107,7 @@ p {
 	text-align: left;
 	color: #3a455c;
 }
+
 em {
 	font-weight: 600;
 }
@@ -116,13 +117,15 @@ em {
 }
 
 #galeria {
-	margin: 5rem 0;
+	margin: 5rem auto 0 auto;
+	width: 99%;
 }
 
 #galeria div {
 	width: 25%;
 	float: left;
 	position: relative;
+	border: 0.3rem solid #f3ba67;
 }
 
 #galeria img:hover {
