@@ -30,7 +30,7 @@ h2 {
 /* hero image and decorative fur*/
 
 .portrait {
-	background: url(assets/portrait.jpg) no-repeat fixed;
+	background: url(assets/portrait.jpg) center no-repeat fixed;
 	height: 100vh;
 	background-size: cover;
 }
@@ -49,7 +49,7 @@ h2 {
 /*header */ 
 
 header {
-	height: 14rem;
+	height: 16rem;
 	position: fixed;
 	width: 100%;
 	z-index: 999;
@@ -61,14 +61,14 @@ h1 {
 	font-size: 6rem;
 	color: #f3ba67;
 	float: left;
-	margin-top: 3.7rem;
+	margin-top: 4rem;
 	margin-left: 18%;
 } 
 
 nav {
 	float: right;
-	margin-right: 2rem;
-	margin-top: 6rem;
+	margin-right: 5rem;
+	margin-top: 6.5rem;
 }
 
 nav a {
@@ -81,11 +81,15 @@ nav a:hover {
 	transition: 0.6s;
 }
 
-li {
+nav li {
 	display: inline-block;
 	font-size: 2.5rem;
 	font-family: neucha, sans-serif;
 	padding-right: 4rem;
+}
+
+nav li:last-child {
+	padding-right: 0;
 }
 
 /*section with articles*/
@@ -308,12 +312,7 @@ footer p {
 
 	header {
 		text-align: center;
-		height: 18rem;
-		position: fixed;
-		width: 100%;
-		z-index: 999;
-		background-color: #3a455c;
-		background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23656970' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+		height: 19rem;
 	}
 
 	h1 {
@@ -324,12 +323,13 @@ footer p {
 
 	nav {
 		float: none;
-		margin: 3rem 0 0 0;
+		margin: 4rem 0 0 0;
 	}
 }
 
 
-/*gallery 2 columns*/
+
+/*gallery 2 columns, change menu layout and change column-count*/
 
 @media all and (max-width: 768px) {
 	#galeria div {
@@ -349,7 +349,61 @@ footer p {
 
 	nav {
 		float: right;
-		margin: 3rem 0 0 0;
+		margin: 3rem 3rem 0 0;
+	}
+
+	.portrait {
+		background: url(assets/portrait.jpg) center no-repeat fixed;
+		background-position: 75% 0%; 
+	}
+}
+
+/*change menu layout*/
+@media all and (max-width: 700px) {
+	
+	header {
+		height: 23.5rem;
+	}
+
+	h1 {
+		display: block;
+		max-width: 20rem;
+		float: left;
+		margin-left: 20rem;
+	} 
+
+	nav {
+		float: right;
+		margin: 2rem 3rem 0 0;
+	}
+	
+	nav li {
+	display: block;
+	font-size: 3.1rem;
+	padding-right: 0;
+	text-align: right;
+	margin-top: 1.5rem;
+	}
+}
+
+/*change menu layout*/
+@media all and (max-width: 580px) {
+	
+	.fur {
+		display: none;
+	}
+
+	header {
+		text-align: left;
+	}
+
+	h1 {
+		margin-left: 0rem;
+		font-size: 3.2rem;
+	}
+
+	nav li {
+	font-size: 2.1rem;
 	}
 }
 
